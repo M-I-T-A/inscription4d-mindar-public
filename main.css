@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: none;
+  overflow: hidden;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+#mindar-controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: none;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  pointer-events: none;
+}
+
+#mindar-controls .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mindar-controls button {
+  font-size: 28px;
+  pointer-events: auto;
+  margin: 10px;
+  background-color: #ccccee;
+  color: #666666;
+  padding: 2px;
+}
+/* canvas {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+} */
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  z-index: 100;
+  font-size: 16px;
+  font-size: 2vw;
+  background: none;
+  pointer-events: none;
+}
+
+#overlay .overlay-text {
+  font-size: 16px;
+  font-size: 15vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #bbbbff;
+}
+
+#top-text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 15vw;
+  /* text-transform: uppercase; */
+}
+
+#bottom-text {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20vw;
+  /* text-transform: uppercase; */
+}
+
+#controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  pointer-events: none;
+}
+
+#controls button {
+  font-size: 28px;
+  pointer-events: auto;
+  margin: 10px;
+  background-color: #ccccee;
+  color: #666666;
+  padding: 2px;
+}
+
+#controls button.active {
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+#controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#controls .left,
+#controls .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#controls .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#controls .center button:active {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+#controls .right div button {
+  float: right;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
