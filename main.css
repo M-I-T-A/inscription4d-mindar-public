@@ -26,21 +26,57 @@ body {
   height: 100%;
   z-index: 200;
   pointer-events: none;
+  background-color: #0000cc;
+}
+#mindar-controls.hidden {
+  display: none;
+}
+#mindar-controls .inner {
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  text-align: center;
 }
 
-#mindar-controls .inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#mindar-controls .inner #into-title {
+  font-size: 16px;
+  font-size: 20vw;
+}
+
+#mindar-controls .inner .instructions a {
+  color: #ffffff;
+  text-decoration: unbderline;
+  pointer-events: auto;
+}
+#mindar-controls .inner .instructions a:hover {
+  opacity: 0.7;
 }
 
 #mindar-controls button {
   font-size: 28px;
   pointer-events: auto;
   margin: 10px;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 2px;
+  background-color: #0000cc;
+  border-color: #ffffff;
+  border-style: solid;
+  color: #ffffff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#mindar-controls button:hover {
+  opacity: 0.7;
+}
+
+#mindar-controls button:active {
+  opacity: 0.3;
+}
+#mindar-controls #stopButton {
+  display: none;
 }
 /* canvas {
   background-color: #000000;
@@ -50,7 +86,7 @@ body {
   outline: none;
 } */
 
-#overlay {
+#text-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,29 +100,21 @@ body {
   pointer-events: none;
 }
 
-#overlay .overlay-text {
+#text-overlay .text-area {
   font-size: 16px;
-  font-size: 15vw;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #ffffff;
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
-
-#top-text {
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 15vw;
+  font-size: 12vw;
   /* text-transform: uppercase; */
+  font-weight: 900;
+  color: rgba(0, 0, 255, 10);
+  opacity: 0.4;
+  text-shadow: -1px 1px 0 #000099, 1px 1px 0 #000099, 1px -1px 0 #000099,
+    -1px -1px 0 #000099;
 }
-
-#bottom-text {
+#word {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 20vw;
+  bottom: 10vw;
   /* text-transform: uppercase; */
 }
 
