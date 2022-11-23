@@ -103,10 +103,10 @@ body {
 #text-overlay .text-area {
   font-size: 16px;
   font-size: 12vw;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-weight: 900;
-  color: rgba(0, 0, 255, 10);
-  opacity: 0.4;
+  color: rgba(255, 255, 255, 200);
+  opacity: 0.8;
   text-shadow: -1px 1px 0 #000099, 1px 1px 0 #000099, 1px -1px 0 #000099,
     -1px -1px 0 #000099;
 }
@@ -114,7 +114,15 @@ body {
   text-align: center;
   width: 100%;
   position: absolute;
-  bottom: 10vw;
+  bottom: 15vw;
+  /* text-transform: uppercase; */
+}
+
+#word-into {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 10vw;
   /* text-transform: uppercase; */
 }
 
