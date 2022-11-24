@@ -47,6 +47,12 @@ body {
   font-size: 20vw;
 }
 
+@media screen and (orientation: landscape) {
+  #mindar-controls .inner #into-title {
+    font-size: 5vw;
+  }
+}
+
 #mindar-controls .inner .instructions a {
   color: #ffffff;
   text-decoration: unbderline;
@@ -107,9 +113,12 @@ body {
   font-weight: 900;
   color: rgba(255, 255, 255, 200);
   opacity: 0.8;
-  text-shadow: -1px 1px 0 #000099, 1px 1px 0 #000099, 1px -1px 0 #000099,
-    -1px -1px 0 #000099;
+  /* text-shadow: -1px 1px 0 #000099, 1px 1px 0 #000099, 1px -1px 0 #000099,
+    -1px -1px 0 #000099; */
+  text-shadow: -0.5px 0.5px 1px #000066aa, 0.5px 0.5px 1px #000066aa,
+    0.5px -0.5px 1px #000066aa;
 }
+
 #word {
   text-align: center;
   width: 100%;
@@ -124,6 +133,20 @@ body {
   position: absolute;
   top: 10vw;
   /* text-transform: uppercase; */
+}
+
+@media screen and (orientation: landscape) {
+  #text-overlay .text-area {
+    font-size: 6vw;
+  }
+
+  #word {
+    bottom: 1vw;
+  }
+
+  #word-into {
+    top: 1vw;
+  }
 }
 
 #controls {
